@@ -16,7 +16,11 @@ loading.style.display = "none";
 openBtn.addEventListener("click", () => {
 
 document.getElementById("openLetter").addEventListener("click", function () {
-    document.getElementById("music").play();
+    const music = document.getElementById("music");
+    music.play().catch(()=>{});
+
+    // code cũ bên dưới giữ nguyên
+});
 
 });
 letter.classList.remove("hidden");

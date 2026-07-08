@@ -15,9 +15,8 @@ loading.style.display = "none";
 
 openBtn.addEventListener("click", () => {
 
+document.getElementById("cover").style.display = "none";
 
-
-});
 letter.classList.remove("hidden");
 
 try{

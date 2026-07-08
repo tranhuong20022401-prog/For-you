@@ -15,8 +15,10 @@ loading.style.display = "none";
 
 openBtn.addEventListener("click", () => {
 
-document.getElementById("cover").style.display = "none";
+document.getElementById("openLetter").addEventListener("click", function () {
+    document.getElementById("music").play();
 
+});
 letter.classList.remove("hidden");
 
 try{
